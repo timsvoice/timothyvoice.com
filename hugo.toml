@@ -1,0 +1,8 @@
+baseURL = 'https://timothyvoice.fly.dev/'
+languageCode = 'en-us'
+title = 'Timothy Voice'
+
+[params]
+  description = 'Personal website for Timothy Voice'
+  author = 'Timothy Voice'
+  fathomSiteId = ''
