@@ -7,6 +7,27 @@
     <meta name="description" content="{{ .Site.Params.description }}">
     <meta name="author" content="{{ .Site.Params.author }}">
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['JetBrains Mono', 'monospace'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        'body-bg': '#F8F8F8',
+                        'text-primary': '#2A3335',
+                        'text-light': '#666',
+                        'border': '#e5e5e5',
+                    },
+                }
+            }
+        }
+    </script>
+
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,32 +35,29 @@
     <!-- JetBrains Mono font -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="/css/style.css">
-
     <!-- Fathom Analytics -->
     {{ if .Site.Params.fathomSiteId }}
     <script src="https://cdn.usefathom.com/script.js" data-site="{{ .Site.Params.fathomSiteId }}" defer></script>
     {{ end }}
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="/" class="site-title">{{ .Site.Title }}</a>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/cv">CV</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/projects">Projects</a></li>
+<body class="bg-body-bg text-text-primary font-sans antialiased">
+    <header class="border-b border-border py-6 mb-8">
+        <nav class="max-w-3xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+            <a href="/" class="font-medium text-xl no-underline hover:underline">{{ .Site.Title }}</a>
+            <ul class="flex gap-6 list-none p-0 m-0">
+                <li><a href="/" class="no-underline hover:underline">Home</a></li>
+                <li><a href="/cv" class="no-underline hover:underline">CV</a></li>
+                <li><a href="/blog" class="no-underline hover:underline">Blog</a></li>
+                <li><a href="/projects" class="no-underline hover:underline">Projects</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="max-w-3xl mx-auto px-6 min-h-[60vh]">
         {{ block "main" . }}{{ end }}
     </main>
 
-    <footer>
+    <footer class="border-t border-border py-8 mt-16 text-center text-text-light text-sm">
         <p>&copy; {{ now.Year }} {{ .Site.Params.author }}. All rights reserved.</p>
     </footer>
 </body>
