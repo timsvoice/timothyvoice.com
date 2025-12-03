@@ -1,0 +1,464 @@
+[
+  {
+    "id": "T001",
+    "description": "Install Hugo Extended via Homebrew with `brew install hugo` (R01)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T002",
+    "description": "Verify Hugo installation with `hugo version` (minimum v0.112.0) (R01)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T003",
+    "description": "Initialize Hugo site structure with `hugo new site . --force` in project root (R01)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T004",
+    "description": "Create hugo.toml with site metadata (baseURL, title, languageCode) in root (R01, R02)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T005",
+    "description": "Add Fathom params section to hugo.toml for site ID injection (R07)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T006",
+    "description": "Create content directory structure: content/cv/, content/blog/, content/projects/ (R01, R02)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T007",
+    "description": "Create layouts directory structure: layouts/_default/, layouts/cv/, layouts/blog/, layouts/projects/ (R01)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T008",
+    "description": "Create base layout template layouts/_default/baseof.html with HTML5 skeleton (R02, R03)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T009",
+    "description": "Add IBM Plex Sans font loading to baseof.html head with preconnect and font-display swap (R03)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T010",
+    "description": "Add Fathom script placeholder in baseof.html using site params (R07)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T011",
+    "description": "Verify base template structure with `hugo server` (manual: check localhost:1313 loads without errors) (R02)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T012",
+    "description": "Create static/css/style.css with CSS reset and IBM Plex font stack (R03)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T013",
+    "description": "Add typography scale (font sizes, line heights, weights) to style.css (R03)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T014",
+    "description": "Add basic layout styles (max-width, margins, padding) to style.css (R03)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T015",
+    "description": "Verify CSS loads correctly in browser dev tools (manual: check Network tab shows style.css loaded) (R03)",
+    "phase": 1,
+    "status": "pending"
+  },
+  {
+    "id": "T016",
+    "description": "[P] Create CV layout layouts/cv/single.html extending baseof.html with block \"main\" (R01, R02)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T017",
+    "description": "[P] Create blog list layout layouts/blog/list.html with .Pages.ByDate.Reverse for chronological ordering (R01, R02)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T018",
+    "description": "Add empty state check to blog list template (if no posts, show \"No posts yet\" message) (R04)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T019",
+    "description": "[P] Create blog post layout layouts/blog/single.html with date and title display (R01, R02)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T020",
+    "description": "[P] Create projects layout layouts/projects/single.html with simple list formatting (R01, R02)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T021",
+    "description": "Create homepage layout layouts/index.html with introduction and navigation links (R02)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T022",
+    "description": "Add navigation component to baseof.html header with links to /, /cv, /blog, /projects (R02, R03)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T023",
+    "description": "Add footer component to baseof.html with copyright and minimal info (R03)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T024",
+    "description": "Add responsive navigation styles to style.css using flexbox (R03)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T025",
+    "description": "Verify CV template renders with hugo server (manual: visit /cv, check layout structure) (R02)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T026",
+    "description": "Verify blog list template with empty state (manual: visit /blog, check \"No posts yet\" shows) (R02, R04)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T027",
+    "description": "Verify projects template renders (manual: visit /projects, check layout structure) (R02)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T028",
+    "description": "Verify homepage renders with navigation (manual: visit /, check all nav links work) (R02)",
+    "phase": 2,
+    "status": "pending"
+  },
+  {
+    "id": "T029",
+    "description": "[P] Create CV content content/cv/index.md with frontmatter (title: \"CV\") and sample sections (R01, R02)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T030",
+    "description": "[P] Create first blog post content/blog/first-post.md with frontmatter (title, date: 2024-12-01, draft: false) (R01, R02)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T031",
+    "description": "[P] Create second blog post content/blog/second-post.md with frontmatter (title, date: 2024-12-02, draft: false) (R01, R02)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T032",
+    "description": "Create projects content content/projects/index.md with frontmatter and list of 2-3 sample projects (R01, R02)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T033",
+    "description": "Verify CV content renders correctly with proper formatting (manual: check /cv shows all sections) (R02)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T034",
+    "description": "Verify blog index shows both posts in reverse chronological order (manual: check /blog lists second-post first) (R02)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T035",
+    "description": "Verify individual blog posts render (manual: visit /blog/first-post and /blog/second-post) (R02)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T036",
+    "description": "Verify projects page renders with all projects (manual: check /projects shows list) (R02)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T037",
+    "description": "Add responsive typography styles to style.css (media queries for mobile/tablet/desktop) (R03)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T038",
+    "description": "Add blog list grid layout to style.css using CSS Grid (R03)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T039",
+    "description": "Verify mobile responsiveness (manual: resize browser to 375px width, check readability) (R03)",
+    "phase": 3,
+    "status": "pending"
+  },
+  {
+    "id": "T040",
+    "description": "Create Dockerfile in root with multi-stage build (Hugo build stage FROM klakegg/hugo:ext-alpine) (R05)",
+    "phase": 4,
+    "status": "pending"
+  },
+  {
+    "id": "T041",
+    "description": "Add nginx serve stage to Dockerfile (FROM nginx:alpine, COPY public to /usr/share/nginx/html) (R05)",
+    "phase": 4,
+    "status": "pending"
+  },
+  {
+    "id": "T042",
+    "description": "[P] Create .docker/nginx.conf with server block for port 80 (R05)",
+    "phase": 4,
+    "status": "pending"
+  },
+  {
+    "id": "T043",
+    "description": "Add caching headers to nginx.conf (Cache-Control for static assets) (R05)",
+    "phase": 4,
+    "status": "pending"
+  },
+  {
+    "id": "T044",
+    "description": "Add gzip compression to nginx.conf for text files (R05)",
+    "phase": 4,
+    "status": "pending"
+  },
+  {
+    "id": "T045",
+    "description": "Add 404 error page handling to nginx.conf (try_files directive) (R05)",
+    "phase": 4,
+    "status": "pending"
+  },
+  {
+    "id": "T046",
+    "description": "Build Docker image locally with `docker build -t timothyvoice-site .` (R05)",
+    "phase": 4,
+    "status": "pending"
+  },
+  {
+    "id": "T047",
+    "description": "Run Docker container locally with `docker run -p 8080:80 timothyvoice-site` (R05)",
+    "phase": 4,
+    "status": "pending"
+  },
+  {
+    "id": "T048",
+    "description": "Verify all routes work in Docker (manual: visit localhost:8080/, /cv, /blog, /projects) (R02, R05)",
+    "phase": 4,
+    "status": "pending"
+  },
+  {
+    "id": "T049",
+    "description": "Install fly.io CLI with `brew install flyctl` (R05, R06)",
+    "phase": 5,
+    "status": "pending"
+  },
+  {
+    "id": "T050",
+    "description": "Authenticate with fly.io using `flyctl auth login` (R06)",
+    "phase": 5,
+    "status": "pending"
+  },
+  {
+    "id": "T051",
+    "description": "Create fly.io app with `flyctl launch` (choose app name, region, skip database) (R06)",
+    "phase": 5,
+    "status": "pending"
+  },
+  {
+    "id": "T052",
+    "description": "Review generated fly.toml and adjust internal_port to 80 if needed (R06)",
+    "phase": 5,
+    "status": "pending"
+  },
+  {
+    "id": "T053",
+    "description": "Set Fathom site ID secret with `flyctl secrets set FATHOM_SITE_ID=XXXXX` (R07)",
+    "phase": 5,
+    "status": "pending"
+  },
+  {
+    "id": "T054",
+    "description": "Deploy manually with `flyctl deploy` (R06)",
+    "phase": 5,
+    "status": "pending"
+  },
+  {
+    "id": "T055",
+    "description": "Verify deployed site loads at fly.io URL (manual: visit https://your-app.fly.dev) (R02, R06)",
+    "phase": 5,
+    "status": "pending"
+  },
+  {
+    "id": "T056",
+    "description": "Verify all pages work on fly.io (manual: test /cv, /blog, /projects routes) (R02, R06)",
+    "phase": 5,
+    "status": "pending"
+  },
+  {
+    "id": "T057",
+    "description": "Create .github/workflows/ directory structure (R05)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T058",
+    "description": "Create .github/workflows/deploy.yml workflow file (R05)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T059",
+    "description": "Add workflow trigger for push to main branch in deploy.yml (R05)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T060",
+    "description": "Add Hugo setup step using peaceiris/actions-hugo@v2 with extended: true (R05)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T061",
+    "description": "Add Hugo build step with `hugo --minify` command (R05)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T062",
+    "description": "Add fly.io deployment step using superfly/flyctl-actions/setup-flyctl@master (R05, R06)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T063",
+    "description": "Add flyctl deploy command to workflow with FLY_API_TOKEN secret (R06)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T064",
+    "description": "Get fly.io API token with `flyctl auth token` and save for GitHub (R06)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T065",
+    "description": "Add FLY_API_TOKEN to GitHub repository secrets (Settings > Secrets > Actions) (R06)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T066",
+    "description": "Commit workflow file and push to main branch to trigger deployment (R05)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T067",
+    "description": "Monitor GitHub Actions tab for workflow execution (check for errors) (R05)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T068",
+    "description": "Verify automatic deployment completed successfully (check fly.io app updated) (R05, R06)",
+    "phase": 6,
+    "status": "pending"
+  },
+  {
+    "id": "T069",
+    "description": "Update baseof.html Fathom script tag to use async attribute for non-blocking load (R07)",
+    "phase": 7,
+    "status": "pending"
+  },
+  {
+    "id": "T070",
+    "description": "Verify FATHOM_SITE_ID environment variable accessible in template (check {{ .Site.Params.fathomSiteId }}) (R07)",
+    "phase": 7,
+    "status": "pending"
+  },
+  {
+    "id": "T071",
+    "description": "Add fallback handling if FATHOM_SITE_ID missing (only render script if param exists) (R04, R07)",
+    "phase": 7,
+    "status": "pending"
+  },
+  {
+    "id": "T072",
+    "description": "Commit Fathom integration changes and push to trigger deployment (R07)",
+    "phase": 7,
+    "status": "pending"
+  },
+  {
+    "id": "T073",
+    "description": "Verify Fathom script loads in production (manual: check browser Network tab on fly.io URL) (R07)",
+    "phase": 7,
+    "status": "pending"
+  },
+  {
+    "id": "T074",
+    "description": "Test Fathom tracking fires (manual: visit site, check Fathom dashboard for pageview) (R07)",
+    "phase": 7,
+    "status": "pending"
+  },
+  {
+    "id": "T075",
+    "description": "Add README.md documentation for updating Fathom site ID in fly.io secrets (R07)",
+    "phase": 7,
+    "status": "pending"
+  },
+  {
+    "id": "T076",
+    "description": "Add README.md section for Hugo version pinning in GitHub Actions (R05)",
+    "phase": 7,
+    "status": "pending"
+  },
+  {
+    "id": "T077",
+    "description": "Add README.md section for local development setup (hugo server instructions) (R01)",
+    "phase": 7,
+    "status": "pending"
+  }
+]
