@@ -1,9 +1,9 @@
 {{ define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-<article class="projects">
-    <h1>{{ .Title }}</h1>
-    <div class="content">
+<article>
+    <h1 class="text-4xl font-medium mb-6">{{ .Title }}</h1>
+    <div class="prose prose-lg max-w-none [&>p]:mb-6 [&>p]:leading-relaxed [&>h2]:text-3xl [&>h2]:font-medium [&>h2]:mt-12 [&>h2]:mb-6 [&>h3]:text-2xl [&>h3]:font-medium [&>h3]:mt-6 [&>h3]:mb-4 [&>a]:underline [&>a]:underline-offset-2 hover:[&>a]:decoration-2 [&>code]:font-mono [&>code]:text-sm [&>code]:bg-gray-100 [&>code]:px-1.5 [&>code]:py-0.5 [&>code]:rounded [&>pre]:font-mono [&>pre]:text-sm [&>pre]:bg-gray-100 [&>pre]:p-6 [&>pre]:rounded [&>pre]:overflow-x-auto [&>pre]:mb-6 [&>ul]:mb-6 [&>ul]:pl-8 [&>ol]:mb-6 [&>ol]:pl-8 [&>li]:mb-2">
         {{ .Content }}
     </div>
 </article>

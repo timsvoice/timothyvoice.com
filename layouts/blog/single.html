@@ -1,20 +1,20 @@
 {{ define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-<article class="blog-post">
-    <header class="post-header">
-        <h1>{{ .Title }}</h1>
-        <time datetime="{{ .Date.Format "2006-01-02" }}">
+<article>
+    <header class="mb-6">
+        <h1 class="text-4xl font-medium mb-6">{{ .Title }}</h1>
+        <time datetime="{{ .Date.Format "2006-01-02" }}" class="block text-text-light text-sm mb-6">
             {{ .Date.Format "January 2, 2006" }}
         </time>
     </header>
 
-    <div class="content">
+    <div class="prose prose-lg max-w-none [&>p]:mb-6 [&>p]:leading-relaxed [&>h2]:text-3xl [&>h2]:font-medium [&>h2]:mt-12 [&>h2]:mb-6 [&>h3]:text-2xl [&>h3]:font-medium [&>h3]:mt-6 [&>h3]:mb-4 [&>a]:underline [&>a]:underline-offset-2 hover:[&>a]:decoration-2 [&>code]:font-mono [&>code]:text-sm [&>code]:bg-gray-100 [&>code]:px-1.5 [&>code]:py-0.5 [&>code]:rounded [&>pre]:font-mono [&>pre]:text-sm [&>pre]:bg-gray-100 [&>pre]:p-6 [&>pre]:rounded [&>pre]:overflow-x-auto [&>pre]:mb-6 [&>ul]:mb-6 [&>ul]:pl-8 [&>ol]:mb-6 [&>ol]:pl-8 [&>li]:mb-2">
         {{ .Content }}
     </div>
 
-    <footer class="post-footer">
-        <a href="/blog">&larr; Back to blog</a>
+    <footer class="mt-8 pt-6 border-t border-border">
+        <a href="/blog" class="underline underline-offset-2 hover:decoration-2">&larr; Back to blog</a>
     </footer>
 </article>
 {{ end }}

@@ -1,26 +1,28 @@
 {{ define "title" }}Blog - {{ .Site.Title }}{{ end }}
 
 {{ define "main" }}
-<div class="blog-list">
-    <h1>Blog</h1>
+<div>
+    <h1 class="text-4xl font-medium mb-6">Blog</h1>
 
     {{ $posts := .Pages.ByDate.Reverse }}
     {{ if $posts }}
-        <div class="blog-posts">
+        <div class="space-y-8">
             {{ range $posts }}
-                <article class="blog-post-preview">
-                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-                    <time datetime="{{ .Date.Format "2006-01-02" }}">
+                <article>
+                    <h2 class="text-3xl font-medium mt-0 mb-2">
+                        <a href="{{ .Permalink }}" class="underline underline-offset-2 hover:decoration-2">{{ .Title }}</a>
+                    </h2>
+                    <time datetime="{{ .Date.Format "2006-01-02" }}" class="block text-text-light text-sm mb-2">
                         {{ .Date.Format "January 2, 2006" }}
                     </time>
                     {{ if .Summary }}
-                        <p>{{ .Summary }}</p>
+                        <p class="mb-6 leading-relaxed">{{ .Summary }}</p>
                     {{ end }}
                 </article>
             {{ end }}
         </div>
     {{ else }}
-        <p class="empty-state">No posts yet. Check back soon!</p>
+        <p class="text-text-light italic">No posts yet. Check back soon!</p>
     {{ end }}
 </div>
 {{ end }}
