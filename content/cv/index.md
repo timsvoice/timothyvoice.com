@@ -4,33 +4,30 @@ date: 2024-12-03
 draft: false
 ---
 
+## Timothy Voice
+**Technical Founder Focused on Data and Media | Techstars Alum**
+
 ## Professional Experience
 
-### Senior Software Engineer
-**Company Name** | 2020 - Present
-- Led development of key features
-- Collaborated with cross-functional teams
-- Mentored junior developers
+### Podcards
+**Founder** | November 2022 - Present
 
-### Software Engineer
-**Previous Company** | 2018 - 2020
-- Developed web applications
-- Improved system performance
-- Participated in code reviews
+### Acast
+**Senior Engineering Manager** | May 2019 - September 2021
+
+### Pippa.io
+**Co-Founder, Software Engineer** | April 2017 - May 2019
+
+### Mighty Maker
+**Software Engineer** | January 2013 - April 2017
+
+### Octave
+**Analyst and Project Manager** | April 2011 - December 2016
+
+### Bennington College
+**Research Assistant** | January 2007 - May 2010
 
 ## Education
 
-### Bachelor of Science in Computer Science
-**University Name** | 2014 - 2018
-
-## Skills
-
-- Programming Languages: Go, JavaScript, Python, Elixir
-- Web Technologies: HTML, CSS, Hugo, React
-- Tools: Git, Docker, CI/CD
-
-## Interests
-
-- Open source contributions
-- Technical writing
-- Continuous learning
+### Bennington College
+**Bachelor's degree, Mathematics** | 2006 - 2010
